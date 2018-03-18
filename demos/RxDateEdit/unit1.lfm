@@ -1,0 +1,260 @@
+object Form1: TForm1
+  Left = 502
+  Height = 397
+  Top = 390
+  Width = 590
+  Caption = 'Form1'
+  ClientHeight = 397
+  ClientWidth = 590
+  OnCreate = FormCreate
+  LCLVersion = '1.9.0.0'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 397
+    Top = 0
+    Width = 590
+    ActivePage = TabSheet2
+    Align = alClient
+    TabIndex = 1
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'RxDBDateEdit demo'
+      ClientHeight = 363
+      ClientWidth = 580
+      object Label1: TLabel
+        AnchorSideLeft.Control = Owner
+        AnchorSideTop.Control = Owner
+        Left = 6
+        Height = 20
+        Top = 6
+        Width = 42
+        Caption = 'Label1'
+        ParentColor = False
+      end
+      object RxDBDateEdit1: TRxDBDateEdit
+        AnchorSideLeft.Control = Label1
+        AnchorSideTop.Control = Label1
+        AnchorSideTop.Side = asrBottom
+        Left = 12
+        Height = 37
+        Top = 32
+        Width = 151
+        BorderSpacing.Around = 6
+        ButtonWidth = 23
+        Enabled = False
+        MaxLength = 10
+        NumGlyphs = 2
+        PasswordChar = #0
+        PopupColor = clWindow
+        TabOrder = 0
+        Text = 't1.  .    '
+        DataField = 'DOC_DATE'
+        DataSource = dsData
+      end
+      object Label2: TLabel
+        AnchorSideLeft.Control = Owner
+        AnchorSideTop.Control = RxDBDateEdit1
+        AnchorSideTop.Side = asrBottom
+        Left = 6
+        Height = 20
+        Top = 75
+        Width = 85
+        BorderSpacing.Around = 6
+        Caption = 'Currency edit'
+        ParentColor = False
+      end
+      object CurrencyEdit1: TCurrencyEdit
+        AnchorSideLeft.Control = Label2
+        AnchorSideTop.Control = Label2
+        AnchorSideTop.Side = asrBottom
+        Left = 12
+        Height = 37
+        Top = 101
+        Width = 148
+        Alignment = taCenter
+        BorderSpacing.Around = 6
+        MaxValue = 0
+        MinValue = 0
+        TabOrder = 1
+        Value = 0
+      end
+      object RxDateEdit1: TRxDateEdit
+        Left = 12
+        Height = 37
+        Top = 160
+        Width = 80
+        ButtonWidth = 23
+        MaxLength = 10
+        NumGlyphs = 2
+        PasswordChar = #0
+        PopupColor = clWindow
+        TabOrder = 2
+        Text = '  .  .    '
+      end
+      object Button1: TButton
+        Left = 248
+        Height = 36
+        Top = 80
+        Width = 77
+        AutoSize = True
+        Caption = 'Invalidate'
+        OnClick = Button1Click
+        TabOrder = 3
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'RxDateRangeEdit demo'
+      ClientHeight = 363
+      ClientWidth = 580
+      object CheckBox1: TCheckBox
+        AnchorSideLeft.Control = TabSheet2
+        AnchorSideTop.Control = TabSheet2
+        Left = 6
+        Height = 24
+        Top = 6
+        Width = 88
+        BorderSpacing.Around = 6
+        Caption = 'reoMonth'
+        Checked = True
+        OnChange = CheckBox1Change
+        State = cbChecked
+        TabOrder = 0
+      end
+      object RxDateRangeEdit1: TRxDateRangeEdit
+        AnchorSideLeft.Control = TabSheet2
+        AnchorSideLeft.Side = asrCenter
+        AnchorSideTop.Control = CheckBox3
+        AnchorSideTop.Side = asrBottom
+        Left = 159
+        Height = 37
+        Top = 96
+        Width = 262
+        BorderSpacing.Around = 6
+        Month = 5
+        TabOrder = 1
+        Year = 2017
+        OnChange = RxDateRangeEdit1Change
+      end
+      object CheckBox2: TCheckBox
+        AnchorSideLeft.Control = TabSheet2
+        AnchorSideTop.Control = CheckBox1
+        AnchorSideTop.Side = asrBottom
+        Left = 6
+        Height = 24
+        Top = 36
+        Width = 96
+        BorderSpacing.Around = 6
+        Caption = 'reoQuarter'
+        Checked = True
+        OnChange = CheckBox1Change
+        State = cbChecked
+        TabOrder = 2
+      end
+      object CheckBox3: TCheckBox
+        AnchorSideLeft.Control = TabSheet2
+        AnchorSideTop.Control = CheckBox2
+        AnchorSideTop.Side = asrBottom
+        Left = 6
+        Height = 24
+        Top = 66
+        Width = 102
+        BorderSpacing.Around = 6
+        Caption = 'reoHalfYear'
+        Checked = True
+        OnChange = CheckBox1Change
+        State = cbChecked
+        TabOrder = 3
+      end
+      object Label3: TLabel
+        AnchorSideLeft.Control = TabSheet2
+        AnchorSideTop.Control = RxDateRangeEdit1
+        AnchorSideTop.Side = asrBottom
+        Left = 6
+        Height = 20
+        Top = 139
+        Width = 92
+        BorderSpacing.Around = 6
+        Caption = 'Start of period'
+        ParentColor = False
+      end
+      object Edit1: TEdit
+        AnchorSideLeft.Control = Label3
+        AnchorSideTop.Control = Label3
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = Label5
+        Left = 12
+        Height = 37
+        Top = 165
+        Width = 272
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Around = 6
+        ReadOnly = True
+        TabOrder = 4
+        Text = 'Edit1'
+      end
+      object Label4: TLabel
+        AnchorSideLeft.Control = Label5
+        AnchorSideTop.Control = RxDateRangeEdit1
+        AnchorSideTop.Side = asrBottom
+        Left = 296
+        Height = 20
+        Top = 139
+        Width = 85
+        BorderSpacing.Around = 6
+        Caption = 'End of period'
+        ParentColor = False
+      end
+      object Edit2: TEdit
+        AnchorSideLeft.Control = Label4
+        AnchorSideTop.Control = Label4
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = TabSheet2
+        AnchorSideRight.Side = asrBottom
+        Left = 302
+        Height = 37
+        Top = 165
+        Width = 272
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Around = 6
+        ReadOnly = True
+        TabOrder = 5
+        Text = 'Edit2'
+      end
+      object Label5: TLabel
+        AnchorSideLeft.Control = TabSheet2
+        AnchorSideLeft.Side = asrCenter
+        AnchorSideTop.Control = TabSheet2
+        Left = 290
+        Height = 1
+        Top = 0
+        Width = 1
+        ParentColor = False
+      end
+    end
+  end
+  object dsData: TDataSource
+    DataSet = rxData
+    Left = 264
+    Top = 21
+  end
+  object rxData: TRxMemoryData
+    FieldDefs = <    
+      item
+        Name = 'DOC_DATE'
+        DataType = ftDate
+      end>
+    PacketRecords = 0
+    Left = 304
+    Top = 21
+    object rxDataDOC_DATE: TDateField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'DOC_DATE'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+end

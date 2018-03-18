@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <Name Value="rx_sort_ibx"/>
+    <Type Value="RunAndDesignTime"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <SearchPaths>
+        <OtherUnitFiles Value="rx_sort_ibx"/>
+        <UnitOutputDirectory Value="lib/rx_sort_ibx/$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Files Count="2">
+      <Item1>
+        <Filename Value="rx_sort_ibx/rxsortibx.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="RxSortIBX"/>
+      </Item1>
+      <Item2>
+        <Filename Value="rx_sort_ibx/exsortibx.pas"/>
+        <UnitName Value="exsortibx"/>
+      </Item2>
+    </Files>
+    <RequiredPkgs Count="3">
+      <Item1>
+        <PackageName Value="ibexpress"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="rxnew"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="FCL"/>
+      </Item3>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

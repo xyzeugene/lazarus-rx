@@ -1,0 +1,204 @@
+object Form1: TForm1
+  Left = 684
+  Height = 486
+  Top = 345
+  Width = 741
+  Caption = 'Form1'
+  ClientHeight = 486
+  ClientWidth = 741
+  OnCreate = FormCreate
+  LCLVersion = '1.9.0.0'
+  object RxDBGrid1: TRxDBGrid
+    Left = 0
+    Height = 486
+    Top = 0
+    Width = 741
+    ColumnDefValues.BlobText = '(данные)'
+    TitleButtons = True
+    AutoSort = True
+    Columns = <    
+      item
+        Title.Alignment = taCenter
+        Title.Orientation = toHorizontal
+        Title.Caption = 'DEP|DEPT_NO'
+        Width = 70
+        FieldName = 'DEPT_NO'
+        EditButtons = <>
+        Filter.DropDownRows = 0
+        Filter.EmptyValue = '(Пусто)'
+        Filter.AllValue = '(Все значения)'
+        Filter.EmptyFont.Style = [fsItalic]
+        Filter.ItemIndex = -1
+        Footers = <>
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Orientation = toHorizontal
+        Title.Caption = 'DEP|DEPARTMENT'
+        Width = 250
+        FieldName = 'DEPARTMENT'
+        EditButtons = <>
+        Filter.DropDownRows = 0
+        Filter.EmptyValue = '(Пусто)'
+        Filter.AllValue = '(Все значения)'
+        Filter.EmptyFont.Style = [fsItalic]
+        Filter.ItemIndex = -1
+        Footers = <>
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Orientation = toHorizontal
+        Title.Caption = 'LOCATION'
+        Width = 250
+        FieldName = 'LOCATION'
+        EditButtons = <>
+        Filter.DropDownRows = 0
+        Filter.EmptyValue = '(Пусто)'
+        Filter.AllValue = '(Все значения)'
+        Filter.EmptyFont.Style = [fsItalic]
+        Filter.ItemIndex = -1
+        Filter.Style = rxfstDialog
+        Footers = <>
+      end>
+    KeyStrokes = <    
+      item
+        Command = rxgcShowFindDlg
+        ShortCut = 16454
+        Enabled = True
+      end    
+      item
+        Command = rxgcShowColumnsDlg
+        ShortCut = 16471
+        Enabled = True
+      end    
+      item
+        Command = rxgcShowFilterDlg
+        ShortCut = 16468
+        Enabled = True
+      end    
+      item
+        Command = rxgcShowSortDlg
+        ShortCut = 16467
+        Enabled = True
+      end    
+      item
+        Command = rxgcShowQuickFilter
+        ShortCut = 16465
+        Enabled = True
+      end    
+      item
+        Command = rxgcHideQuickFilter
+        ShortCut = 16456
+        Enabled = True
+      end    
+      item
+        Command = rxgcSelectAll
+        ShortCut = 16449
+        Enabled = True
+      end    
+      item
+        Command = rxgcDeSelectAll
+        ShortCut = 16429
+        Enabled = True
+      end    
+      item
+        Command = rxgcInvertSelection
+        ShortCut = 16426
+        Enabled = True
+      end    
+      item
+        Command = rxgcOptimizeColumnsWidth
+        ShortCut = 16427
+        Enabled = True
+      end    
+      item
+        Command = rxgcCopyCellValue
+        ShortCut = 16451
+        Enabled = True
+      end>
+    FooterOptions.DrawFullLine = False
+    SearchOptions.QuickSearchOptions = [loCaseInsensitive, loPartialKey]
+    SearchOptions.FromStart = False
+    OptionsRx = [rdgAllowColumnsForm, rdgAllowDialogFind, rdgDblClickOptimizeColWidth, rdgFilter, rdgAllowQuickSearch, rdgAllowQuickFilter, rdgAllowFilterForm, rdgAllowSortForm, rdgAllowToolMenu]
+    Align = alClient
+    Color = clWindow
+    DrawFullLine = False
+    FocusColor = clRed
+    SelectedColor = clHighlight
+    GridLineStyle = psSolid
+    DataSource = DataSource1
+    Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgHeaderPushedLook]
+    ParentColor = False
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    TransactIsolationLevel = tiReadCommitted
+    Connected = True
+    HostName = '127.0.0.1'
+    Port = 0
+    Database = 'employee'
+    User = 'sysdba'
+    Password = 'masterkey'
+    Protocol = 'firebirdd-2.5'
+    Left = 40
+    Top = 24
+  end
+  object ZReadOnlyQuery1: TZReadOnlyQuery
+    Connection = ZConnection1
+    OnFilterRecord = ZReadOnlyQuery1FilterRecord
+    SQL.Strings = (
+      'select'
+      '  DEPARTMENT.DEPT_NO,'
+      '  DEPARTMENT.DEPARTMENT,'
+      '  DEPARTMENT.LOCATION'
+      'from'
+      '  DEPARTMENT'
+      'order by'
+      '  DEPARTMENT.DEPT_NO'
+    )
+    Params = <>
+    Left = 248
+    Top = 168
+    object ZReadOnlyQuery1DEPT_NO: TStringField
+      FieldKind = fkData
+      FieldName = 'DEPT_NO'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 12
+    end
+    object ZReadOnlyQuery1DEPARTMENT: TStringField
+      FieldKind = fkData
+      FieldName = 'DEPARTMENT'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 100
+    end
+    object ZReadOnlyQuery1LOCATION: TStringField
+      FieldKind = fkData
+      FieldName = 'LOCATION'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = ZReadOnlyQuery1
+    Left = 216
+    Top = 168
+  end
+  object RxSortZeos1: TRxSortZeos
+    Left = 95
+    Top = 24
+  end
+end

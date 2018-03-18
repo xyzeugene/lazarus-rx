@@ -1,0 +1,872 @@
+object Form1: TForm1
+  Left = 517
+  Height = 749
+  Top = 222
+  Width = 1206
+  Caption = 'Form1'
+  ClientHeight = 749
+  ClientWidth = 1206
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.9.0.0'
+  object RxDBVerticalGrid1: TRxDBVerticalGrid
+    Left = 899
+    Height = 642
+    Top = 107
+    Width = 307
+    Align = alClient
+    Color = clWindow
+    GridDefValues.BlobText = '(данные)'
+    DataCoumn.Title.Alignment = taCenter
+    DataCoumn.Title.Caption = 'Данные'
+    DataCoumn.Width = 250
+    DataSource = dsData
+    FocusColor = clRed
+    LabelCoumn.Alignment = taCenter
+    LabelCoumn.ReadOnly = True
+    LabelCoumn.Title.Alignment = taCenter
+    LabelCoumn.Title.Caption = 'Заголовок'
+    LabelCoumn.Width = 120
+    Options = [rxvgColumnTitle]
+    ReadOnly = True
+    Rows = <    
+      item
+        Alignment = taCenter
+        FieldName = 'VIP'
+        RowTitle.Caption = 'VIP-клиент'
+        WordWrap = False
+        RowHeight = 27
+        ReadOnly = False
+      end    
+      item
+        FieldName = 'tb_client_inn'
+        RowTitle.Caption = 'ИНН'
+        WordWrap = False
+        RowHeight = 27
+        ReadOnly = False
+        PopupMenu = PopupMenu1
+      end    
+      item
+        FieldName = 'tb_client_name'
+        RowTitle.Caption = 'Наименование'
+        WordWrap = False
+        RowHeight = 27
+        ReadOnly = False
+      end    
+      item
+        Alignment = taRightJustify
+        FieldName = 'tb_client_id'
+        RowTitle.Caption = 'ID'
+        WordWrap = False
+        RowHeight = 27
+        ReadOnly = False
+        PopupMenu = PopupMenu2
+      end    
+      item
+        Alignment = taCenter
+        FieldName = 'TB_CLIENT_EMAIL'
+        RowTitle.Caption = 'ОГРН'
+        WordWrap = False
+        RowHeight = 27
+        ReadOnly = False
+        PopupMenu = PopupMenu3
+      end    
+      item
+        FieldName = 'TB_CLIENT_EMAIL'
+        RowTitle.Caption = 'E-Mail'
+        WordWrap = False
+        RowHeight = 27
+        ReadOnly = False
+      end    
+      item
+        RowTitle.Caption = 'Описание'
+        StaticText = 'Это просто текст'
+        Style = rxvrStaticText
+        WordWrap = False
+        RowHeight = 27
+        ReadOnly = False
+      end    
+      item
+        FieldName = 'CREATE_USER_NAME'
+        RowTitle.Caption = 'Автор'
+        WordWrap = False
+        RowHeight = 27
+        ReadOnly = False
+      end    
+      item
+        FieldName = 'create_user_date'
+        RowTitle.Caption = 'Дата создания'
+        Color = clWhite
+        WordWrap = False
+        RowHeight = 27
+        ReadOnly = False
+      end    
+      item
+        FieldName = 'TB_CLEINT_TYPE'
+        RowTitle.Caption = 'Тип клиента'
+        KeyList.Strings = (
+          '1'
+          '2'
+          '3'
+          '4'
+          '5'
+        )
+        PickList.Strings = (
+          'Группа "А"'
+          'Группа "Б"'
+          'Группа "В"'
+          'Группа "Г"'
+        )
+        WordWrap = False
+        RowHeight = 27
+        ReadOnly = False
+      end    
+      item
+        FieldName = 'TB_CLEINT_TYPE'
+        RowTitle.Caption = 'Тип 2'
+        ImageList = ImageList1
+        NotInKeyListIndex = 4
+        KeyList.Strings = (
+          '0=0'
+          '1=1'
+          '2=2'
+          '3=3'
+        )
+        WordWrap = False
+        RowHeight = 27
+        ReadOnly = False
+      end    
+      item
+        FieldName = 'TB_CLIENT_IMAGE'
+        RowTitle.Caption = 'Изображение'
+        WordWrap = False
+        RowHeight = 90
+        ReadOnly = False
+        ShowBlobImagesAndMemo = True
+      end    
+      item
+        FieldName = 'TB_CLEINT_MEMO'
+        RowTitle.Caption = 'Описание'
+        WordWrap = False
+        RowHeight = 90
+        ReadOnly = False
+      end>
+    TitleStyle = tsNative
+    RowHeights = (
+      20
+      27
+      27
+      27
+      27
+      27
+      20
+      20
+      20
+      20
+      20
+      20
+      90
+      90
+    )
+  end
+  object RxDBGrid1: TRxDBGrid
+    Left = 0
+    Height = 642
+    Top = 107
+    Width = 894
+    ColumnDefValues.BlobText = '(данные)'
+    TitleButtons = False
+    AutoSort = True
+    Columns = <    
+      item
+        Title.Alignment = taCenter
+        Title.Orientation = toHorizontal
+        Title.Caption = 'TB_CLIENT_ID'
+        FieldName = 'TB_CLIENT_ID'
+        EditButtons = <>
+        Filter.DropDownRows = 0
+        Filter.EmptyValue = '(Пусто)'
+        Filter.AllValue = '(Все значения)'
+        Filter.EmptyFont.Style = [fsItalic]
+        Filter.ItemIndex = -1
+        Footers = <>
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Orientation = toHorizontal
+        Title.Caption = 'TB_CLEINT_CODE'
+        FieldName = 'TB_CLEINT_CODE'
+        EditButtons = <>
+        Filter.DropDownRows = 0
+        Filter.EmptyValue = '(Пусто)'
+        Filter.AllValue = '(Все значения)'
+        Filter.EmptyFont.Style = [fsItalic]
+        Filter.ItemIndex = -1
+        Footers = <>
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Orientation = toHorizontal
+        Title.Caption = 'VIP'
+        FieldName = 'VIP'
+        EditButtons = <>
+        Filter.DropDownRows = 0
+        Filter.EmptyValue = '(Пусто)'
+        Filter.AllValue = '(Все значения)'
+        Filter.EmptyFont.Style = [fsItalic]
+        Filter.ItemIndex = -1
+        Footers = <>
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Orientation = toHorizontal
+        Title.Caption = 'TB_CLIENT_INN'
+        FieldName = 'TB_CLIENT_INN'
+        EditButtons = <>
+        Filter.DropDownRows = 0
+        Filter.EmptyValue = '(Пусто)'
+        Filter.AllValue = '(Все значения)'
+        Filter.EmptyFont.Style = [fsItalic]
+        Filter.ItemIndex = -1
+        Footers = <>
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Orientation = toHorizontal
+        Title.Caption = 'TB_CLEINT_NAME'
+        FieldName = 'TB_CLIENT_NAME'
+        EditButtons = <>
+        Filter.DropDownRows = 0
+        Filter.EmptyValue = '(Пусто)'
+        Filter.AllValue = '(Все значения)'
+        Filter.EmptyFont.Style = [fsItalic]
+        Filter.ItemIndex = -1
+        Footers = <>
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Orientation = toHorizontal
+        Title.Caption = 'TB_CLIENT_EMAIL'
+        FieldName = 'TB_CLIENT_EMAIL'
+        EditButtons = <>
+        Filter.DropDownRows = 0
+        Filter.EmptyValue = '(Пусто)'
+        Filter.AllValue = '(Все значения)'
+        Filter.EmptyFont.Style = [fsItalic]
+        Filter.ItemIndex = -1
+        Footers = <>
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Orientation = toHorizontal
+        Title.Caption = 'TB_CLIENT_PHONE'
+        FieldName = 'TB_CLIENT_PHONE'
+        EditButtons = <>
+        Filter.DropDownRows = 0
+        Filter.EmptyValue = '(Пусто)'
+        Filter.AllValue = '(Все значения)'
+        Filter.EmptyFont.Style = [fsItalic]
+        Filter.ItemIndex = -1
+        Footers = <>
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Orientation = toHorizontal
+        Title.Caption = 'CREATE_USER_NAME'
+        FieldName = 'CREATE_USER_NAME'
+        EditButtons = <>
+        Filter.DropDownRows = 0
+        Filter.EmptyValue = '(Пусто)'
+        Filter.AllValue = '(Все значения)'
+        Filter.EmptyFont.Style = [fsItalic]
+        Filter.ItemIndex = -1
+        Footers = <>
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Orientation = toHorizontal
+        Title.Caption = 'CREATE_USER_DATE'
+        FieldName = 'CREATE_USER_DATE'
+        EditButtons = <>
+        Filter.DropDownRows = 0
+        Filter.EmptyValue = '(Пусто)'
+        Filter.AllValue = '(Все значения)'
+        Filter.EmptyFont.Style = [fsItalic]
+        Filter.ItemIndex = -1
+        Footers = <>
+      end>
+    KeyStrokes = <    
+      item
+        Command = rxgcShowFindDlg
+        ShortCut = 16454
+        Enabled = True
+      end    
+      item
+        Command = rxgcShowColumnsDlg
+        ShortCut = 16471
+        Enabled = True
+      end    
+      item
+        Command = rxgcShowFilterDlg
+        ShortCut = 16468
+        Enabled = True
+      end    
+      item
+        Command = rxgcShowSortDlg
+        ShortCut = 16467
+        Enabled = True
+      end    
+      item
+        Command = rxgcShowQuickFilter
+        ShortCut = 16465
+        Enabled = True
+      end    
+      item
+        Command = rxgcHideQuickFilter
+        ShortCut = 16456
+        Enabled = True
+      end    
+      item
+        Command = rxgcSelectAll
+        ShortCut = 16449
+        Enabled = True
+      end    
+      item
+        Command = rxgcDeSelectAll
+        ShortCut = 16429
+        Enabled = True
+      end    
+      item
+        Command = rxgcInvertSelection
+        ShortCut = 16426
+        Enabled = True
+      end    
+      item
+        Command = rxgcOptimizeColumnsWidth
+        ShortCut = 16427
+        Enabled = True
+      end    
+      item
+        Command = rxgcCopyCellValue
+        ShortCut = 16451
+        Enabled = True
+      end>
+    FooterOptions.DrawFullLine = False
+    SearchOptions.QuickSearchOptions = [loCaseInsensitive, loPartialKey]
+    SearchOptions.FromStart = False
+    OptionsRx = [rdgAllowColumnsForm, rdgAllowDialogFind, rdgAllowQuickFilter]
+    Align = alLeft
+    Color = clWindow
+    DrawFullLine = False
+    FocusColor = clRed
+    SelectedColor = clHighlight
+    GridLineStyle = psSolid
+    DataSource = dsData
+    Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    TabOrder = 1
+    TitleStyle = tsNative
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 107
+    Top = 0
+    Width = 1206
+    Align = alTop
+    AutoSize = True
+    ClientHeight = 107
+    ClientWidth = 1206
+    TabOrder = 2
+    object Button1: TButton
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Panel1
+      Left = 7
+      Height = 36
+      Top = 7
+      Width = 80
+      AutoSize = True
+      BorderSpacing.Around = 6
+      Caption = 'Diconnect'
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+    object Button2: TButton
+      AnchorSideLeft.Control = Button1
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Panel1
+      Left = 93
+      Height = 36
+      Top = 7
+      Width = 69
+      AutoSize = True
+      BorderSpacing.Around = 6
+      Caption = 'Connect'
+      OnClick = Button2Click
+      TabOrder = 1
+    end
+    object RadioGroup1: TRadioGroup
+      AnchorSideLeft.Control = Button2
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Panel1
+      Left = 168
+      Height = 93
+      Top = 7
+      Width = 83
+      AutoFill = True
+      AutoSize = True
+      BorderSpacing.Around = 6
+      Caption = 'Image align'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 72
+      ClientWidth = 81
+      ItemIndex = 0
+      Items.Strings = (
+        'Left'
+        'Rigth'
+        'Center'
+      )
+      OnClick = CheckBox1Change
+      TabOrder = 2
+    end
+    object CheckBox2: TCheckBox
+      AnchorSideLeft.Control = RadioGroup1
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = CheckBox1
+      AnchorSideTop.Side = asrBottom
+      Left = 257
+      Height = 24
+      Top = 37
+      Width = 111
+      BorderSpacing.Around = 6
+      Caption = 'Show images'
+      OnChange = CheckBox1Change
+      TabOrder = 3
+    end
+    object CheckBox1: TCheckBox
+      AnchorSideLeft.Control = RadioGroup1
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Panel1
+      Left = 257
+      Height = 24
+      Top = 7
+      Width = 110
+      BorderSpacing.Around = 6
+      Caption = 'Show header'
+      OnChange = CheckBox1Change
+      TabOrder = 4
+    end
+  end
+  object Splitter1: TSplitter
+    Left = 894
+    Height = 642
+    Top = 107
+    Width = 5
+  end
+  object dsData: TDataSource
+    DataSet = rxData
+    Left = 120
+    Top = 94
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 822
+    Top = 341
+    object MenuItem1: TMenuItem
+      Caption = 'A'
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'A2'
+    end
+    object MenuItem4: TMenuItem
+      Caption = '-'
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'A3'
+    end
+  end
+  object PopupMenu2: TPopupMenu
+    Left = 834
+    Top = 403
+    object MenuItem5: TMenuItem
+      Caption = 'B1'
+    end
+    object MenuItem6: TMenuItem
+      Caption = 'B2'
+    end
+    object MenuItem8: TMenuItem
+      Caption = '-'
+    end
+    object MenuItem7: TMenuItem
+      Caption = 'B3'
+    end
+  end
+  object PopupMenu3: TPopupMenu
+    Left = 838
+    Top = 458
+    object MenuItem9: TMenuItem
+      Caption = 'C1'
+    end
+    object MenuItem10: TMenuItem
+      Caption = 'C2'
+    end
+    object MenuItem12: TMenuItem
+      Caption = '-'
+    end
+    object MenuItem11: TMenuItem
+      Caption = 'C3'
+    end
+  end
+  object rxData: TRxMemoryData
+    FieldDefs = <    
+      item
+        Name = 'TB_CLIENT_ID'
+        DataType = ftAutoInc
+        Precision = -1
+      end    
+      item
+        Name = 'TB_CLEINT_CODE'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'TB_CLIENT_INN'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'TB_CLIENT_NAME'
+        DataType = ftString
+        Precision = -1
+        Size = 200
+      end    
+      item
+        Name = 'TB_CLIENT_EMAIL'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'TB_CLIENT_PHONE'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'VIP'
+        DataType = ftBoolean
+      end    
+      item
+        Name = 'CREATE_USER_NAME'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'CREATE_USER_DATE'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'TB_CLEINT_TYPE'
+        DataType = ftInteger
+      end    
+      item
+        Name = 'TB_CLIENT_IMAGE'
+        DataType = ftBlob
+      end    
+      item
+        Name = 'TB_CLEINT_MEMO'
+        DataType = ftMemo
+      end>
+    PacketRecords = 0
+    Left = 176
+    Top = 94
+    object rxDataTB_CLIENT_ID: TAutoIncField
+      FieldKind = fkData
+      FieldName = 'TB_CLIENT_ID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object rxDataTB_CLEINT_CODE: TLongintField
+      FieldKind = fkData
+      FieldName = 'TB_CLEINT_CODE'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object rxDataTB_CLIENT_INN: TStringField
+      FieldKind = fkData
+      FieldName = 'TB_CLIENT_INN'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object rxDataTB_CLIENT_NAME: TStringField
+      FieldKind = fkData
+      FieldName = 'TB_CLIENT_NAME'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 200
+    end
+    object rxDataTB_CLIENT_EMAIL: TStringField
+      FieldKind = fkData
+      FieldName = 'TB_CLIENT_EMAIL'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object rxDataTB_CLIENT_PHONE: TStringField
+      FieldKind = fkData
+      FieldName = 'TB_CLIENT_PHONE'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object rxDataVIP: TBooleanField
+      FieldKind = fkData
+      FieldName = 'VIP'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object rxDataCREATE_USER_NAME: TStringField
+      FieldKind = fkData
+      FieldName = 'CREATE_USER_NAME'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object rxDataCREATE_USER_DATE: TDateTimeField
+      FieldKind = fkData
+      FieldName = 'CREATE_USER_DATE'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object rxDataTB_CLEINT_TYPE: TLongintField
+      FieldKind = fkData
+      FieldName = 'TB_CLEINT_TYPE'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object rxDataTB_CLIENT_IMAGE: TBlobField
+      FieldKind = fkData
+      FieldName = 'TB_CLIENT_IMAGE'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object rxDataTB_CLEINT_MEMO: TMemoField
+      FieldKind = fkData
+      FieldName = 'TB_CLEINT_MEMO'
+      Index = 11
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      BlobType = ftMemo
+      Transliterate = False
+    end
+  end
+  object ImageList1: TImageList
+    Left = 1160
+    Top = 48
+    Bitmap = {
+      4C69050000001000000010000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000188532FF178432FF178331FF178231FF168030FF00000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000178532FF168431FF168330FF158130FF14802FFF00000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000168531FF158430FF14822FFF14812EFF137F2DFF00000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000158430FF14832FFF13822EFF12802DFF117E2CFF00000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000158430FF13822EFF12812DFF107F2BFF0F7E2AFF00000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000014832FFF12812DFF10802CFF0F7E2AFF0E7C29FF00000000000000000000
+      00000000000000000000000000000000000000000000178332FF178331FF1583
+      30FF13822EFF11802CFF0F7E2AFF0D7D29FF0C7B27FF0C7A27FF0C7A27FF0D7A
+      28FF000000000000000000000000000000000000000000000000168231FF1581
+      2FFF13802DFF107F2BFF0E7D29FF0C7B27FF0B7A26FF0B7926FF0B7926FF0000
+      0000000000000000000000000000000000000000000000000000000000001480
+      2EFF127F2DFF107E2BFF0E7C29FF0C7A27FF0B7926FF0A7925FF000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000127E2DFF107D2BFF0E7B28FF0C7A27FF0B7926FF00000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000107C2BFF0E7B29FF0D7A27FF0000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000F7B2AFF000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000188432FF000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000178532FF178431FF000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000178532FF168531FF158430FF000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000001785
+      32FF168531FF158430FF14832FFF13822EFF12812DFF12802DFF127F2DFF127E
+      2DFF137E2DFF0000000000000000000000000000000000000000178432FF1684
+      31FF158430FF13832FFF12812DFF11802CFF107F2BFF107E2BFF107D2BFF107D
+      2BFF117D2CFF00000000000000000000000000000000178332FF168331FF1583
+      30FF14822FFF12812DFF11802CFF0F7F2BFF0E7D29FF0E7C29FF0E7C28FF0E7B
+      29FF0F7B29FF0000000000000000000000000000000000000000168231FF1581
+      2FFF13802DFF117F2CFF0F7E2AFF0E7D29FF0D7C28FF0C7B27FF0C7A27FF0C7A
+      27FF0D7A28FF0000000000000000000000000000000000000000000000001480
+      2FFF127F2DFF107E2BFF0E7C29FF0D7B28FF0B7A26FF0B7A26FF0A7925FF0B79
+      26FF0C7927FF0000000000000000000000000000000000000000000000000000
+      0000127E2CFF107D2BFF0E7B29FF000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000107C2BFF0E7B29FF000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000F7B29FF000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000188332FF0000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000178331FF168231FF00000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000158330FF15812FFF14802EFF000000000000
+      00000000000000000000000000000000000000000000188532FF178532FF1685
+      31FF158430FF158430FF14832FFF13822EFF13802DFF127F2DFF127E2DFF0000
+      00000000000000000000000000000000000000000000178432FF168431FF1584
+      30FF14832FFF13822EFF12812DFF11802CFF107F2BFF107E2BFF107D2BFF107C
+      2BFF0000000000000000000000000000000000000000178331FF168330FF1482
+      2FFF13822EFF12812DFF10802CFF0F7E2AFF0E7D29FF0E7C29FF0E7B28FF0E7B
+      29FF0F7B2AFF00000000000000000000000000000000168231FF158130FF1481
+      2EFF12802DFF107F2BFF0F7E2AFF0E7D29FF0C7C28FF0C7A27FF0C7A27FF0D7A
+      27FF0000000000000000000000000000000000000000168030FF14802FFF137F
+      2DFF117E2CFF0F7D2AFF0E7C29FF0C7B27FF0B7A26FF0B7926FF0B7926FF0000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000C7A27FF0B7926FF0A7925FF000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000C7A27FF0B7926FF00000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000D7A28FF0000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000178332FF000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000178432FF168331FF168231FF0000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000178532FF168431FF158330FF15812FFF14802FFF00000000000000000000
+      0000000000000000000000000000000000000000000000000000000000001785
+      32FF168531FF158430FF14822FFF13802DFF127F2DFF127E2CFF000000000000
+      0000000000000000000000000000000000000000000000000000178532FF1685
+      31FF158430FF14832FFF12812DFF117F2CFF107E2BFF107D2BFF107C2BFF0000
+      00000000000000000000000000000000000000000000188432FF178431FF1584
+      30FF14832FFF12822EFF11802CFF0F7E2AFF0E7C29FF0E7B29FF0E7B29FF0F7B
+      2AFF000000000000000000000000000000000000000000000000000000000000
+      000013822EFF11802CFF0F7F2BFF0E7D29FF0D7B28FF00000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000012802DFF107F2BFF0E7D29FF0D7C28FF0B7A26FF00000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000012802DFF107E2BFF0E7C29FF0C7B27FF0B7A26FF00000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000127F2DFF107D2BFF0E7C28FF0C7A27FF0A7925FF00000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000127E2DFF107D2BFF0E7B29FF0C7A27FF0B7926FF00000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000137E2DFF117C2BFF0F7B29FF0D7A28FF0C7927FF00000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000A46534FF5959F3FF5959F3FF5959
+      F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959
+      F3FFA46534FF000000000000000000000000A46534FF5959F3FF5959F3FF5959
+      F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959
+      F3FFA46534FF000000000000000000000000A46534FFECEEEEFFECEEEEFFECEE
+      EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEE
+      EEFFA46534FF000000000000000000000000A46534FFECEEEEFFECEEEEFFECEE
+      EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEE
+      EEFFA46534FF000000000000000000000000A46534FFECEEEEFFECEEEEFFECEE
+      EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEE
+      EEFFA46534FF000000000000000000000000A46534FFECEEEEFFECEEEEFFECEE
+      EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEE
+      EEFFA46534FF000000000000000000000000A46534FFECEEEEFFECEEEEFFECEE
+      EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEE
+      EEFFA46534FF000000000000000000000000A46534FFA46534FFA46534FFA465
+      34FFA46534FFA46534FFA46534FFA46534FFA46534FFA46534FFA46534FFA465
+      34FFA46534FF000000000000000000000000A46534FFA46534FFA46534FFA465
+      34FFA46534FFA46534FFA46534FFA46534FFA46534FFA46534FFA46534FFA465
+      34FFA46534FF000000000000000000000000A46534FFA46534FFB6BDBAFFB6BD
+      BAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFA46534FFA46534FFA465
+      34FFA46534FF000000000000000000000000A46534FFA46534FFB6BDBAFFA465
+      34FFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFA46534FFA46534FFA465
+      34FFA46534FF000000000000000000000000A46534FFA46534FFB6BDBAFFA465
+      34FFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFA46534FFA46534FFA465
+      34FFA46534FF000000000000000000000000A46534FFA46534FFB6BDBAFFA465
+      34FFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFA46534FFA46534FFA465
+      34FFA46534FF000000000000000000000000A465347FA46534FFB6BDBAFFB6BD
+      BAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFA46534FFA46534FFA465
+      34FFA46534FF0000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000
+    }
+  end
+end

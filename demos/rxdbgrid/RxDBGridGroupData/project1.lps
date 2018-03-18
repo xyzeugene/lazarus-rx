@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="44">
+      <Unit0>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="47" Y="20"/>
+        <UsageCount Value="62"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <TopLine Value="61"/>
+        <CursorPos Y="82"/>
+        <UsageCount Value="62"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="../../../rxdb/rxdbgrid.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="4679"/>
+        <CursorPos Y="4691"/>
+        <UsageCount Value="29"/>
+        <Bookmarks Count="4">
+          <Item0 X="3" Y="4429" ID="5"/>
+          <Item1 X="3" Y="3860" ID="3"/>
+          <Item2 X="5" Y="6366" ID="4"/>
+          <Item3 X="3" Y="4689" ID="1"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="../../../../install/source/fpcsrc/rtl/objpas/classes/classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="70"/>
+        <CursorPos X="30" Y="91"/>
+        <UsageCount Value="6"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../../../../install/source/fpcsrc/rtl/objpas/classes/lists.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="316"/>
+        <CursorPos X="13" Y="328"/>
+        <UsageCount Value="6"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../../../../install/source/fpcsrc/packages/fcl-db/src/base/db.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1669"/>
+        <CursorPos X="14" Y="1687"/>
+        <UsageCount Value="6"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="../../../../install/source/fpcsrc/packages/fcl-db/src/base/datasource.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="212"/>
+        <CursorPos Y="218"/>
+        <UsageCount Value="6"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="../../../../install/source/fpcsrc/packages/fcl-db/src/base/dataset.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1825"/>
+        <CursorPos X="3" Y="1829"/>
+        <UsageCount Value="6"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="../../../rxdb/rxmemds.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1147"/>
+        <CursorPos Y="1164"/>
+        <UsageCount Value="12"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="../../../../../lcl/grids.pas"/>
+        <UnitName Value="Grids"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="3977"/>
+        <CursorPos X="5" Y="3981"/>
+        <UsageCount Value="27"/>
+        <Loaded Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="../../../../../lcl/dbgrids.pas"/>
+        <UnitName Value="DBGrids"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="967"/>
+        <CursorPos X="22" Y="984"/>
+        <UsageCount Value="29"/>
+        <Bookmarks Count="1">
+          <Item0 X="22" Y="984" ID="2"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="../../../../../lcl/include/control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1843"/>
+        <CursorPos Y="1850"/>
+        <UsageCount Value="10"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="../../../../../lcl/include/wincontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="6479"/>
+        <CursorPos Y="6498"/>
+        <UsageCount Value="10"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="../../../../../lcl/include/scrollingwincontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="76"/>
+        <CursorPos Y="95"/>
+        <UsageCount Value="6"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="../../../../install/source/fpcsrc/rtl/inc/systemh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="338"/>
+        <CursorPos X="9" Y="357"/>
+        <UsageCount Value="6"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="../../../../install/source/fpcsrc/rtl/objpas/classes/stringl.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1571"/>
+        <CursorPos X="3" Y="1573"/>
+        <UsageCount Value="6"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="../../../../install/source/fpcsrc/rtl/objpas/sysutils/sysstrh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="73"/>
+        <CursorPos X="10" Y="92"/>
+        <UsageCount Value="6"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="../../../../install/source/fpcsrc/rtl/objpas/sysutils/sysstr.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="551"/>
+        <CursorPos X="5" Y="553"/>
+        <UsageCount Value="6"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="../../../../install/source/fpcsrc/rtl/inc/ustringh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="87"/>
+        <CursorPos X="5" Y="106"/>
+        <UsageCount Value="6"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="../../../../../lcl/include/canvas.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1579"/>
+        <CursorPos Y="1600"/>
+        <UsageCount Value="7"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="../../../../../lcl/include/winapi.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="603"/>
+        <CursorPos Y="622"/>
+        <UsageCount Value="10"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="../../../../../lcl/widgetset/wsgrids.pp"/>
+        <UnitName Value="WSGrids"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="35"/>
+        <CursorPos X="20" Y="53"/>
+        <UsageCount Value="8"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="../../../../../lcl/interfaces/gtk2/gtk2wsgrids.pp"/>
+        <UnitName Value="Gtk2WSGrids"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="31"/>
+        <CursorPos Y="66"/>
+        <UsageCount Value="8"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="../../../../../lcl/controls.pp"/>
+        <UnitName Value="Controls"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="1678"/>
+        <CursorPos X="14" Y="1695"/>
+        <UsageCount Value="14"/>
+        <Loaded Value="True"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="../../../../install/source/fpcsrc/rtl/inc/typshrdh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="127"/>
+        <CursorPos X="17" Y="153"/>
+        <UsageCount Value="7"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="../../../../install/source/fpcsrc/rtl/inc/typshrd.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="300"/>
+        <CursorPos X="3" Y="302"/>
+        <UsageCount Value="7"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="../../../../../lcl/include/customcheckbox.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="114"/>
+        <CursorPos Y="134"/>
+        <UsageCount Value="7"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="../../../../../lcl/interfaces/gtk2/gtk2widgetset.inc"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="2399"/>
+        <CursorPos Y="2420"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="../../../rxdbgrid_export_spreadsheet/rxdbgridexportspreadsheet.pas"/>
+        <UnitName Value="RxDBGridExportSpreadSheet"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="516"/>
+        <CursorPos X="3" Y="559"/>
+        <UsageCount Value="11"/>
+        <Bookmarks Count="1">
+          <Item0 Y="578" ID="1"/>
+        </Bookmarks>
+      </Unit28>
+      <Unit29>
+        <Filename Value="../../../../../lcl/lcltype.pp"/>
+        <UnitName Value="LCLType"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1688"/>
+        <CursorPos X="3" Y="1705"/>
+        <UsageCount Value="8"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="../../../rxdbgrid_export_spreadsheet/rxdbgridexportspreadsheet_paramsunit.pas"/>
+        <ComponentName Value="RxDBGridExportSpreadSheet_ParamsForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="RxDBGridExportSpreadSheet_ParamsUnit"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="60"/>
+        <CursorPos X="44" Y="91"/>
+        <UsageCount Value="8"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="../../../rxtools/rxdconst.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="173"/>
+        <CursorPos X="50" Y="191"/>
+        <UsageCount Value="8"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="../../../../fpspreadsheet/source/common/fpspreadsheet.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="6340"/>
+        <CursorPos Y="6358"/>
+        <UsageCount Value="7"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="/home/install/source/fpcsrc/packages/fcl-db/src/base/db.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1780"/>
+        <CursorPos X="15" Y="1797"/>
+        <UsageCount Value="18"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="/home/install/source/fpcsrc/packages/fcl-db/src/base/datasource.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="131"/>
+        <CursorPos Y="150"/>
+        <UsageCount Value="18"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="/home/install/source/fpcsrc/packages/fcl-db/src/base/dataset.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2028"/>
+        <CursorPos Y="2046"/>
+        <UsageCount Value="15"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="../../../../../lcl/include/customcontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="103"/>
+        <CursorPos Y="136"/>
+        <UsageCount Value="10"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="../../../../../lcl/interfaces/gtk2/gtk2callback.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="662"/>
+        <CursorPos Y="694"/>
+        <UsageCount Value="10"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="../../../../../lcl/interfaces/gtk2/gtk2proc.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3684"/>
+        <CursorPos Y="3702"/>
+        <UsageCount Value="10"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="../../../../../lcl/interfaces/gtk2/gtk2winapi.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="8876"/>
+        <CursorPos Y="8893"/>
+        <UsageCount Value="10"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="/home/install/source/fpcsrc/rtl/objpas/classes/lists.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="42"/>
+        <CursorPos Y="63"/>
+        <UsageCount Value="10"/>
+      </Unit40>
+      <Unit41>
+        <Filename Value="/home/install/source/fpcsrc/rtl/inc/astrings.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="121"/>
+        <CursorPos Y="150"/>
+        <UsageCount Value="10"/>
+      </Unit41>
+      <Unit42>
+        <Filename Value="/home/install/source/fpcsrc/rtl/inc/rtti.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="337"/>
+        <CursorPos Y="361"/>
+        <UsageCount Value="10"/>
+      </Unit42>
+      <Unit43>
+        <Filename Value="../../../../../lcl/include/application.inc"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="1395"/>
+        <CursorPos Y="1414"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit43>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="../../../../../lcl/grids.pas"/>
+        <Caret Line="653" Column="21" TopLine="649"/>
+      </Position1>
+      <Position2>
+        <Filename Value="../../../../../lcl/grids.pas"/>
+        <Caret Line="3977" Column="18" TopLine="3965"/>
+      </Position2>
+      <Position3>
+        <Filename Value="../../../../../lcl/grids.pas"/>
+        <Caret Line="3980" Column="17" TopLine="3965"/>
+      </Position3>
+      <Position4>
+        <Filename Value="../../../../../lcl/grids.pas"/>
+        <Caret Line="3981" Column="5" TopLine="3977"/>
+      </Position4>
+      <Position5>
+        <Filename Value="../../../../../lcl/dbgrids.pas"/>
+        <Caret Line="3947" Column="5" TopLine="3922"/>
+      </Position5>
+      <Position6>
+        <Filename Value="../../../../../lcl/interfaces/gtk2/gtk2widgetset.inc"/>
+        <Caret Line="46" TopLine="17"/>
+      </Position6>
+      <Position7>
+        <Filename Value="../../../../../lcl/interfaces/gtk2/gtk2widgetset.inc"/>
+        <Caret Line="2416" TopLine="2399"/>
+      </Position7>
+      <Position8>
+        <Filename Value="../../../../../lcl/interfaces/gtk2/gtk2widgetset.inc"/>
+        <Caret Line="2419" TopLine="2399"/>
+      </Position8>
+      <Position9>
+        <Filename Value="../../../../../lcl/interfaces/gtk2/gtk2widgetset.inc"/>
+        <Caret Line="2420" TopLine="2399"/>
+      </Position9>
+      <Position10>
+        <Filename Value="../../../../../lcl/include/application.inc"/>
+        <Caret Line="408" TopLine="391"/>
+      </Position10>
+      <Position11>
+        <Filename Value="../../../../../lcl/include/application.inc"/>
+        <Caret Line="409" TopLine="391"/>
+      </Position11>
+      <Position12>
+        <Filename Value="../../../../../lcl/include/application.inc"/>
+        <Caret Line="410" TopLine="391"/>
+      </Position12>
+      <Position13>
+        <Filename Value="../../../../../lcl/include/application.inc"/>
+        <Caret Line="412" TopLine="391"/>
+      </Position13>
+      <Position14>
+        <Filename Value="../../../../../lcl/include/application.inc"/>
+        <Caret Line="1278" TopLine="1260"/>
+      </Position14>
+      <Position15>
+        <Filename Value="../../../../../lcl/include/application.inc"/>
+        <Caret Line="1412" TopLine="1395"/>
+      </Position15>
+      <Position16>
+        <Filename Value="../../../../../lcl/include/application.inc"/>
+        <Caret Line="1419" TopLine="1395"/>
+      </Position16>
+      <Position17>
+        <Filename Value="../../../../../lcl/include/application.inc"/>
+        <Caret Line="1411" TopLine="1395"/>
+      </Position17>
+      <Position18>
+        <Filename Value="../../../../../lcl/include/application.inc"/>
+        <Caret Line="1412" TopLine="1395"/>
+      </Position18>
+      <Position19>
+        <Filename Value="../../../rxdb/rxdbgrid.pas"/>
+        <Caret Line="4104" Column="7" TopLine="4064"/>
+      </Position19>
+      <Position20>
+        <Filename Value="../../../rxdb/rxdbgrid.pas"/>
+        <Caret Line="4691" TopLine="4662"/>
+      </Position20>
+      <Position21>
+        <Filename Value="../../../rxdb/rxdbgrid.pas"/>
+        <Caret Line="5336" Column="3" TopLine="5308"/>
+      </Position21>
+      <Position22>
+        <Filename Value="../../../rxdb/rxdbgrid.pas"/>
+      </Position22>
+      <Position23>
+        <Filename Value="../../../rxdb/rxdbgrid.pas"/>
+        <Caret Line="2953" Column="3" TopLine="2922"/>
+      </Position23>
+      <Position24>
+        <Filename Value="../../../rxdb/rxdbgrid.pas"/>
+        <Caret Line="5339" Column="3" TopLine="5308"/>
+      </Position24>
+      <Position25>
+        <Filename Value="../../../rxdb/rxdbgrid.pas"/>
+        <Caret Line="6369" TopLine="6342"/>
+      </Position25>
+      <Position26>
+        <Filename Value="../../../rxdb/rxdbgrid.pas"/>
+        <Caret Line="6362" Column="18" TopLine="6342"/>
+      </Position26>
+      <Position27>
+        <Filename Value="../../../../../lcl/dbgrids.pas"/>
+        <Caret Line="984" Column="22" TopLine="967"/>
+      </Position27>
+      <Position28>
+        <Filename Value="../../../rxdb/rxdbgrid.pas"/>
+        <Caret Line="4689" Column="3" TopLine="4676"/>
+      </Position28>
+      <Position29>
+        <Filename Value="../../../../../lcl/dbgrids.pas"/>
+        <Caret Line="984" Column="22" TopLine="967"/>
+      </Position29>
+      <Position30>
+        <Filename Value="../../../rxdb/rxdbgrid.pas"/>
+        <Caret Line="6364" Column="16" TopLine="6350"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+  <Debugging>
+    <Watches Count="5">
+      <Item1>
+        <Expression Value="FDataLink.FFirstRecord"/>
+      </Item1>
+      <Item2>
+        <Expression Value="FDataLink.FDataset.FActiveRecord"/>
+      </Item2>
+      <Item3>
+        <Expression Value="A"/>
+      </Item3>
+      <Item4>
+        <Expression Value="H"/>
+      </Item4>
+      <Item5>
+        <Expression Value="i"/>
+      </Item5>
+    </Watches>
+  </Debugging>
+</CONFIG>

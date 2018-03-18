@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="5">
+      <Unit0>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <TopLine Value="3"/>
+        <CursorPos Y="52"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="../../../rxdb/rxdbgrid.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="4301"/>
+        <CursorPos X="3" Y="4266"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="../../../rxdb/rxdbgrid_popupfilterunit.pas"/>
+        <ComponentName Value="RxDBGrid_PopUpFilterForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="RxDBGrid_PopUpFilterUnit"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="166"/>
+        <CursorPos X="36" Y="177"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../../../rxdb/rxlookup.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+    </Units>
+    <JumpHistory Count="11" HistoryIndex="10">
+      <Position1>
+        <Filename Value="unit1.pas"/>
+      </Position1>
+      <Position2>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="39" Column="24" TopLine="8"/>
+      </Position2>
+      <Position3>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="40" Column="24" TopLine="8"/>
+      </Position3>
+      <Position4>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="41" Column="24" TopLine="8"/>
+      </Position4>
+      <Position5>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="42" Column="24" TopLine="8"/>
+      </Position5>
+      <Position6>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="45" Column="24" TopLine="11"/>
+      </Position6>
+      <Position7>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="51" Column="5" TopLine="21"/>
+      </Position7>
+      <Position8>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="52" TopLine="3"/>
+      </Position8>
+      <Position9>
+        <Filename Value="../../../rxdb/rxdbgrid.pas"/>
+        <Caret Line="758" Column="9" TopLine="743"/>
+      </Position9>
+      <Position10>
+        <Filename Value="../../../rxdb/rxdbgrid.pas"/>
+        <Caret Line="4170" Column="3" TopLine="4209"/>
+      </Position10>
+      <Position11>
+        <Filename Value="../../../rxdb/rxdbgrid.pas"/>
+        <Caret Line="760" Column="15" TopLine="745"/>
+      </Position11>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

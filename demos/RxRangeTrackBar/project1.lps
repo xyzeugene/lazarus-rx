@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="58">
+      <Unit0>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="20"/>
+        <UsageCount Value="42"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="22"/>
+        <CursorPos X="29" Y="49"/>
+        <UsageCount Value="42"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="rangeselector.pas"/>
+        <UnitName Value="RangeSelector"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="10"/>
+        <UsageCount Value="42"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="../../rxcontrols/rxrangesel.pas"/>
+        <UnitName Value="RxRangeSel"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="112"/>
+        <CursorPos X="14" Y="127"/>
+        <UsageCount Value="33"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../../rxcontrols/rxclock.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="33"/>
+        <CursorPos X="3" Y="52"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../../rxcontrols/rxspin.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="939"/>
+        <CursorPos X="5" Y="975"/>
+        <UsageCount Value="12"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="../../../../lcl/controls.pp"/>
+        <UnitName Value="Controls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2011"/>
+        <CursorPos X="15" Y="2027"/>
+        <UsageCount Value="12"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="../../../../lcl/lmessages.pp"/>
+        <UnitName Value="LMessages"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="15" Y="20"/>
+        <UsageCount Value="12"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="../../../../lcl/include/winapih.inc"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="10" Y="84"/>
+        <UsageCount Value="9"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="../../../../lcl/include/winapi.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="20"/>
+        <CursorPos Y="20"/>
+        <UsageCount Value="9"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="../../../../lcl/lclintf.pas"/>
+        <UnitName Value="LCLIntf"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <CursorPos X="6" Y="55"/>
+        <UsageCount Value="9"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="../../../../lcl/lcltype.pp"/>
+        <UnitName Value="LCLType"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2221"/>
+        <CursorPos X="17" Y="2252"/>
+        <UsageCount Value="9"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="../../../install/source/lazarus/designer/menushortcuts.pas"/>
+        <UnitName Value="MenuShortcuts"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="194"/>
+        <CursorPos X="41" Y="213"/>
+        <UsageCount Value="9"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="../../../install/source/fpcsrc/rtl/inc/typshrdh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="127"/>
+        <CursorPos Y="150"/>
+        <UsageCount Value="9"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="../../../install/source/fpcsrc/rtl/inc/typshrd.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="418"/>
+        <CursorPos X="3" Y="420"/>
+        <UsageCount Value="9"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="../../../../lcl/themes.pas"/>
+        <UnitName Value="Themes"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1874"/>
+        <CursorPos Y="1904"/>
+        <UsageCount Value="12"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="../../../../lcl/buttons.pp"/>
+        <UnitName Value="Buttons"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="14"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="../../../../lcl/include/speedbutton.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="985"/>
+        <CursorPos X="3" Y="987"/>
+        <UsageCount Value="11"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="../../../../lcl/include/graphiccontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="86"/>
+        <CursorPos X="3" Y="95"/>
+        <UsageCount Value="9"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="../../../../lcl/stdctrls.pp"/>
+        <UnitName Value="StdCtrls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1104"/>
+        <CursorPos X="3" Y="1111"/>
+        <UsageCount Value="9"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="../../../../lcl/dbgrids.pas"/>
+        <UnitName Value="DBGrids"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="282"/>
+        <CursorPos X="3" Y="292"/>
+        <UsageCount Value="9"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="../../../../lcl/grids.pas"/>
+        <UnitName Value="Grids"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="964"/>
+        <CursorPos Y="994"/>
+        <UsageCount Value="12"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="../../../../lcl/include/canvas.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1579"/>
+        <CursorPos Y="1600"/>
+        <UsageCount Value="9"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="../../../../lcl/interfaces/gtk2/gtk2themes.pas"/>
+        <UnitName Value="Gtk2Themes"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="741"/>
+        <CursorPos X="4" Y="747"/>
+        <UsageCount Value="10"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="../../../../lcl/spin.pp"/>
+        <UnitName Value="Spin"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="54"/>
+        <CursorPos X="17" Y="41"/>
+        <UsageCount Value="10"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="../../../../lcl/include/bitbtn.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="131"/>
+        <CursorPos X="3" Y="133"/>
+        <UsageCount Value="9"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="../../../../lcl/comctrls.pp"/>
+        <UnitName Value="ComCtrls"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="2609"/>
+        <CursorPos X="23" Y="2625"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="../../rxcontrols/rxaboutdialog.pas"/>
+        <UnitName Value="RxAboutDialog"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="13"/>
+        <UsageCount Value="9"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="../../rxcontrols/rxaboutformunit.pas"/>
+        <UnitName Value="rxAboutFormUnit"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="13"/>
+        <UsageCount Value="9"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="../../rxcontrols/rxapputils.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="35"/>
+        <UsageCount Value="9"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="../../registerrx.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="47"/>
+        <CursorPos X="72" Y="64"/>
+        <UsageCount Value="10"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="../../../../install/source/fpcsrc/rtl/inc/typshrdh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="34"/>
+        <CursorPos X="3" Y="38"/>
+        <UsageCount Value="9"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="../../../../lcl/include/control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3919"/>
+        <CursorPos X="3" Y="3924"/>
+        <UsageCount Value="12"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="../../../../lcl/include/buttonglyph.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="273"/>
+        <CursorPos X="41" Y="304"/>
+        <UsageCount Value="9"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="../../../../lcl/imagelistcache.pas"/>
+        <UnitName Value="ImageListCache"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="52"/>
+        <CursorPos X="3" Y="59"/>
+        <UsageCount Value="9"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="../../rxcontrols/rxtooledit.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="41"/>
+        <CursorPos X="3" Y="60"/>
+        <UsageCount Value="10"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="../../../../lcl/editbtn.pas"/>
+        <UnitName Value="EditBtn"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="68"/>
+        <CursorPos X="4" Y="87"/>
+        <UsageCount Value="12"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="../../../../lcl/groupededit.pp"/>
+        <UnitName Value="GroupedEdit"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="154"/>
+        <CursorPos X="3" Y="62"/>
+        <UsageCount Value="10"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="../../../../lcl/include/customcontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="100"/>
+        <CursorPos X="3" Y="110"/>
+        <UsageCount Value="10"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="../../../../install/source/fpcsrc/packages/fcl-image/src/fphandler.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="214"/>
+        <CursorPos Y="233"/>
+        <UsageCount Value="9"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="../../../../lcl/include/graphic.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="221"/>
+        <CursorPos Y="240"/>
+        <UsageCount Value="9"/>
+      </Unit40>
+      <Unit41>
+        <Filename Value="../../../../lcl/include/customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="922"/>
+        <CursorPos Y="943"/>
+        <UsageCount Value="9"/>
+      </Unit41>
+      <Unit42>
+        <Filename Value="rxrangesel.pas"/>
+        <UnitName Value="RxRangeSel"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="15"/>
+        <CursorPos X="2" Y="34"/>
+        <UsageCount Value="9"/>
+      </Unit42>
+      <Unit43>
+        <Filename Value="../../../../lcl/include/wincontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3798"/>
+        <CursorPos X="3" Y="3817"/>
+        <UsageCount Value="10"/>
+      </Unit43>
+      <Unit44>
+        <Filename Value="../../../../lazarus/components/rxnew/rxcontrols/rxrangesel.pas"/>
+        <UnitName Value="RxRangeSel"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="451"/>
+        <CursorPos X="48" Y="481"/>
+        <UsageCount Value="12"/>
+      </Unit44>
+      <Unit45>
+        <Filename Value="../../../../lazarus/lcl/themes.pas"/>
+        <UnitName Value="Themes"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1574"/>
+        <CursorPos X="3" Y="1541"/>
+        <UsageCount Value="12"/>
+      </Unit45>
+      <Unit46>
+        <Filename Value="../../../../lazarus/lcl/interfaces/win32/win32themes.pas"/>
+        <UnitName Value="Win32Themes"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="6"/>
+        <UsageCount Value="12"/>
+      </Unit46>
+      <Unit47>
+        <Filename Value="E:/install/source/fpcsrc/packages/winunits-base/src/uxtheme.pp"/>
+        <UnitName Value="UxTheme"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="19"/>
+        <CursorPos X="10" Y="59"/>
+        <UsageCount Value="12"/>
+      </Unit47>
+      <Unit48>
+        <Filename Value="../../../../lazarus/lcl/include/winapih.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="67"/>
+        <CursorPos X="10" Y="84"/>
+        <UsageCount Value="10"/>
+      </Unit48>
+      <Unit49>
+        <Filename Value="../../../../lcl/tmschema.pas"/>
+        <UnitName Value="TmSchema"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2791"/>
+        <CursorPos X="3" Y="1605"/>
+        <UsageCount Value="10"/>
+      </Unit49>
+      <Unit50>
+        <Filename Value="../../../../lcl/interfaces/qt5/qtthemes.pas"/>
+        <UnitName Value="QtThemes"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="847"/>
+        <CursorPos Y="882"/>
+        <UsageCount Value="10"/>
+      </Unit50>
+      <Unit51>
+        <Filename Value="../../../../install/source/fpcsrc/rtl/objpas/types.pp"/>
+        <UnitName Value="Types"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="476"/>
+        <CursorPos Y="498"/>
+        <UsageCount Value="10"/>
+      </Unit51>
+      <Unit52>
+        <Filename Value="../../../../lcl/interfaces/qt5/qt56.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="12778"/>
+        <CursorPos X="21" Y="12786"/>
+        <UsageCount Value="10"/>
+      </Unit52>
+      <Unit53>
+        <Filename Value="../../rxcontrols/rxctrls.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="658"/>
+        <CursorPos X="44" Y="15"/>
+        <UsageCount Value="10"/>
+      </Unit53>
+      <Unit54>
+        <Filename Value="../../../../lcl/include/spinedit.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="159"/>
+        <CursorPos X="3" Y="161"/>
+        <UsageCount Value="10"/>
+      </Unit54>
+      <Unit55>
+        <Filename Value="../../../../lcl/lresources.pp"/>
+        <UnitName Value="LResources"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="5340"/>
+        <CursorPos Y="5359"/>
+        <UsageCount Value="10"/>
+      </Unit55>
+      <Unit56>
+        <Filename Value="../../backup/rxvclutils.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="110"/>
+        <CursorPos X="5" Y="129"/>
+        <UsageCount Value="10"/>
+      </Unit56>
+      <Unit57>
+        <Filename Value="../../rxcontrols/rxlclutils.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="642"/>
+        <CursorPos X="46" Y="656"/>
+        <UsageCount Value="10"/>
+      </Unit57>
+    </Units>
+    <JumpHistory Count="27" HistoryIndex="26">
+      <Position1>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="20" Column="5"/>
+      </Position1>
+      <Position2>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="9" Column="50"/>
+      </Position2>
+      <Position3>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="23" Column="43"/>
+      </Position3>
+      <Position4>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="46" Column="3" TopLine="43"/>
+      </Position4>
+      <Position5>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="23" Column="15" TopLine="4"/>
+      </Position5>
+      <Position6>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="67" Column="28" TopLine="43"/>
+      </Position6>
+      <Position7>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="52" Column="3" TopLine="43"/>
+      </Position7>
+      <Position8>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="68" Column="27" TopLine="43"/>
+      </Position8>
+      <Position9>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="32" TopLine="27"/>
+      </Position9>
+      <Position10>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="11" Column="49"/>
+      </Position10>
+      <Position11>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="30" Column="40"/>
+      </Position11>
+      <Position12>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="31" Column="40"/>
+      </Position12>
+      <Position13>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="30" Column="40"/>
+      </Position13>
+      <Position14>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="29" Column="40"/>
+      </Position14>
+      <Position15>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="24"/>
+      </Position15>
+      <Position16>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="44" TopLine="14"/>
+      </Position16>
+      <Position17>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="19" Column="34" TopLine="6"/>
+      </Position17>
+      <Position18>
+        <Filename Value="../../rxcontrols/rxrangesel.pas"/>
+        <Caret Line="80" Column="26" TopLine="71"/>
+      </Position18>
+      <Position19>
+        <Filename Value="../../rxcontrols/rxrangesel.pas"/>
+        <Caret Line="203" Column="3" TopLine="199"/>
+      </Position19>
+      <Position20>
+        <Filename Value="../../rxcontrols/rxrangesel.pas"/>
+        <Caret Line="81" Column="14" TopLine="63"/>
+      </Position20>
+      <Position21>
+        <Filename Value="../../rxcontrols/rxrangesel.pas"/>
+        <Caret Line="208" Column="3" TopLine="204"/>
+      </Position21>
+      <Position22>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="19" Column="34" TopLine="6"/>
+      </Position22>
+      <Position23>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="38" Column="15" TopLine="6"/>
+      </Position23>
+      <Position24>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="45" Column="40" TopLine="19"/>
+      </Position24>
+      <Position25>
+        <Filename Value="../../rxcontrols/rxrangesel.pas"/>
+        <Caret Line="148" Column="14" TopLine="129"/>
+      </Position25>
+      <Position26>
+        <Filename Value="../../rxcontrols/rxrangesel.pas"/>
+        <Caret Line="127" Column="14" TopLine="112"/>
+      </Position26>
+      <Position27>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="45" Column="40" TopLine="19"/>
+      </Position27>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

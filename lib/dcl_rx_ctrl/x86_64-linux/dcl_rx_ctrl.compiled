@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1513128808"/>
+  <Params Value=" -MObjFPC -Scgi -Cg -O1 -g -gl -l -vewnhibq -Fu/naxos/devel/lazarus/components/lazarus-ccr-svn-6256-components-rx-trunk/dcl_rx_ctrl -Fu/usr/share/lazarus/1.8.0/packager/units/x86_64-linux -Fu/usr/share/lazarus/1.8.0/components/lazutils/lib/x86_64-linux -Fu/naxos/devel/lazarus/components/lazarus-ccr-svn-6256-components-rx-trunk/lib/rxtools/x86_64-linux -Fu/usr/share/lazarus/1.8.0/lcl/units/x86_64-linux -Fu/usr/share/lazarus/1.8.0/lcl/units/x86_64-linux/gtk2 -Fu/usr/share/lazarus/1.8.0/components/lazcontrols/lib/x86_64-linux/gtk2 -Fu/usr/share/lazarus/1.8.0/components/ideintf/units/x86_64-linux/gtk2 -Fu/naxos/devel/lazarus/components/lazarus-ccr-svn-6256-components-rx-trunk/lib/rxcontrols/x86_64-linux -Fu/naxos/devel/lazarus/components/lazarus-ccr-svn-6256-components-rx-trunk/ -FU/naxos/devel/lazarus/components/lazarus-ccr-svn-6256-components-rx-trunk/lib/dcl_rx_ctrl/x86_64-linux/ -dLCL -dLCLgtk2 dcl_rx_ctrl.pas"/>
+</CONFIG>

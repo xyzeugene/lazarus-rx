@@ -1,0 +1,434 @@
+object Form1: TForm1
+  Left = 469
+  Height = 537
+  Top = 245
+  Width = 898
+  Caption = 'RxDBGrid demo - SelectedFont'
+  ClientHeight = 537
+  ClientWidth = 898
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.9.0.0'
+  object Panel1: TPanel
+    Left = 698
+    Height = 537
+    Top = 0
+    Width = 200
+    Align = alRight
+    ClientHeight = 537
+    ClientWidth = 200
+    TabOrder = 0
+    object Label1: TLabel
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = ColorBox1
+      AnchorSideTop.Side = asrBottom
+      Left = 7
+      Height = 20
+      Top = 105
+      Width = 87
+      BorderSpacing.Around = 6
+      Caption = 'Selected font'
+      ParentColor = False
+    end
+    object CheckBox1: TCheckBox
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Panel1
+      Left = 7
+      Height = 24
+      Top = 7
+      Width = 97
+      BorderSpacing.Around = 6
+      Caption = 'Row select'
+      OnChange = CheckBox1Change
+      TabOrder = 0
+    end
+    object Label2: TLabel
+      AnchorSideLeft.Control = Panel1
+      AnchorSideBottom.Control = SpinEdit1
+      AnchorSideBottom.Side = asrBottom
+      Left = 7
+      Height = 20
+      Top = 217
+      Width = 58
+      Anchors = [akLeft, akBottom]
+      BorderSpacing.Left = 6
+      Caption = 'Font size'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = CheckBox1
+      AnchorSideTop.Side = asrBottom
+      Left = 7
+      Height = 20
+      Top = 37
+      Width = 93
+      BorderSpacing.Around = 6
+      Caption = 'Selected color'
+      ParentColor = False
+    end
+    object ColorBox1: TColorBox
+      AnchorSideLeft.Control = Label3
+      AnchorSideTop.Control = Label3
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 13
+      Height = 36
+      Top = 63
+      Width = 180
+      Style = [cbStandardColors, cbExtendedColors, cbSystemColors, cbIncludeDefault, cbCustomColor, cbPrettyNames, cbCustomColors]
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Around = 6
+      ItemHeight = 0
+      OnChange = CheckBox1Change
+      TabOrder = 1
+    end
+    object Label4: TLabel
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Label1
+      AnchorSideTop.Side = asrBottom
+      Left = 7
+      Height = 20
+      Top = 131
+      Width = 68
+      BorderSpacing.Around = 6
+      Caption = 'Font name'
+      ParentColor = False
+    end
+    object EditButton1: TEditButton
+      AnchorSideLeft.Control = Label4
+      AnchorSideTop.Control = Label4
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 13
+      Height = 37
+      Top = 157
+      Width = 180
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Around = 6
+      ButtonWidth = 23
+      Glyph.Data = {
+        36040000424D3604000000000000360000002800000010000000100000000100
+        2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+        FF00FFFFFF00E69B6266E69A61FFE5975EFFE2945BFFE3935AFFE3915733FFFF
+        FF00E38F5499E28D53FFE28C51FFE28A50FFE28A50FFE28A5099FFFFFF00FFFF
+        FF00FFFFFF00E79F6611E79C6477E8A573FFDB915FFEDC905DA9E5945B10FFFF
+        FF00E3915722E3905677E59A68FFEAAD83FFE4945EFFE28A5044FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00E79E6666E5A575FFDD9868FFDA905E2DFFFF
+        FF00FFFFFF00FFFFFF00E39057FFE9A77AFFE28D54CCFFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00E7A16888E1A579FFDC9462F5DB91
+        61BDDA905EBDD88D5BBDDF9A6CFFE9A779FFE39056BBFFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00E9A36A11E6A169E3E3AA80FFDC95
+        64ADDB946203FFFFFF00E5975DFFE9A676FFE3935A99FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00E9A56D33E5A472FFDF9B
+        68FAE59C6653E79C6477E9A673FFE8A572FFE5955D77FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00419149E539853FFF317A37FF2A702FFF86864AFBE4AA
+        7CFFDF9C69D1E7A16879EAAA79FFE9A876FFE69A6177FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00419149F99BD2A2FF95D09DFF2A702FF8E7A6
+        70DBE2A16DF9E29F6ABAEDB487FFE9A672FFE79C6444FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF0051A75A8A71B67AFFA6D8ADFF9ED3A5FF317A37FCEAAA
+        7322E5A670FAE3A26FFCEEBC95FFEAA975FFE7A16844FFFFFF00DB7423DDD970
+        1EFFD86B1BCC84A052CA80C588FFB0DCB6FF75B87CFF419149F539853FFBE5A9
+        76E7E5A874F4EABB92FFE9BA93FFE7B489FFE09E6CE8FFFFFF00E49555FFDB77
+        25EEDB701F778CA453F288CB90FF83C68BFF619F52BF499C5203419149E1E6AC
+        788AE5AA7791E7A976D4E6A974E2E5A671E2E2A27094FFFFFF00E18E42FFDF7E
+        2EEEDB792733DB74235592AA5DFF85A151F958B16203FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00E28B3A55DF85
+        35DDE18C41FFDD7B2ACCE7A36CFFDE813AFFD86C1B44FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00E2904022E28D
+        3CBBE1873977DF843177DF7E2ECCE49859FFDB742388FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00E6954722E698
+        4EFFE28E40DDE28B3A11DF853588E69F60FFDD7B2ABBFFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00E697
+        4755E49445DDE39344FFE69A52FFE28E43FFDF843188FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+      }
+      MaxLength = 0
+      NumGlyphs = 1
+      OnButtonClick = EditButton1ButtonClick
+      PasswordChar = #0
+      Spacing = 0
+      TabOrder = 2
+      Text = 'EditButton1'
+    end
+    object SpinEdit1: TSpinEdit
+      AnchorSideLeft.Control = Label2
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = EditButton1
+      AnchorSideTop.Side = asrBottom
+      Left = 71
+      Height = 37
+      Top = 200
+      Width = 89
+      BorderSpacing.Around = 6
+      OnChange = CheckBox1Change
+      TabOrder = 3
+      Value = 1
+    end
+    object CheckBox2: TCheckBox
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = SpinEdit1
+      AnchorSideTop.Side = asrBottom
+      Left = 7
+      Height = 24
+      Top = 243
+      Width = 55
+      BorderSpacing.Around = 6
+      Caption = 'Bold'
+      OnChange = CheckBox1Change
+      TabOrder = 4
+    end
+    object CheckBox3: TCheckBox
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = CheckBox2
+      AnchorSideTop.Side = asrBottom
+      Left = 7
+      Height = 24
+      Top = 273
+      Width = 56
+      BorderSpacing.Around = 6
+      Caption = 'Italic'
+      TabOrder = 5
+    end
+    object CheckBox4: TCheckBox
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = CheckBox3
+      AnchorSideTop.Side = asrBottom
+      Left = 7
+      Height = 24
+      Top = 303
+      Width = 88
+      BorderSpacing.Around = 6
+      Caption = 'Underline'
+      TabOrder = 6
+    end
+    object CheckBox5: TCheckBox
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = CheckBox4
+      AnchorSideTop.Side = asrBottom
+      Left = 7
+      Height = 24
+      Top = 333
+      Width = 87
+      BorderSpacing.Around = 6
+      Caption = 'StrikeOut'
+      OnChange = CheckBox1Change
+      TabOrder = 7
+    end
+    object Label5: TLabel
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = CheckBox5
+      AnchorSideTop.Side = asrBottom
+      Left = 7
+      Height = 20
+      Top = 363
+      Width = 65
+      BorderSpacing.Around = 6
+      Caption = 'Font color'
+      ParentColor = False
+    end
+    object ColorBox2: TColorBox
+      AnchorSideLeft.Control = Label3
+      AnchorSideTop.Control = Label5
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 13
+      Height = 36
+      Top = 389
+      Width = 180
+      Style = [cbStandardColors, cbExtendedColors, cbSystemColors, cbIncludeDefault, cbCustomColor, cbPrettyNames, cbCustomColors]
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Around = 6
+      ItemHeight = 0
+      OnChange = CheckBox1Change
+      TabOrder = 8
+    end
+  end
+  object RxDBGrid1: TRxDBGrid
+    Left = 0
+    Height = 537
+    Top = 0
+    Width = 698
+    ColumnDefValues.BlobText = '(данные)'
+    TitleButtons = False
+    AutoSort = True
+    Columns = <    
+      item
+        Title.Alignment = taCenter
+        Title.Orientation = toHorizontal
+        Title.Caption = 'ID'
+        Width = 60
+        FieldName = 'ID'
+        EditButtons = <>
+        Filter.DropDownRows = 0
+        Filter.EmptyValue = '(Пусто)'
+        Filter.NotEmptyValue = '(Не пусто)'
+        Filter.AllValue = '(Все значения)'
+        Filter.EmptyFont.Style = [fsItalic]
+        Filter.ItemIndex = -1
+        Footers = <>
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Orientation = toHorizontal
+        Title.Caption = 'Caption'
+        Width = 450
+        FieldName = 'Caption'
+        EditButtons = <>
+        Filter.DropDownRows = 0
+        Filter.EmptyValue = '(Пусто)'
+        Filter.NotEmptyValue = '(Не пусто)'
+        Filter.AllValue = '(Все значения)'
+        Filter.EmptyFont.Style = [fsItalic]
+        Filter.ItemIndex = -1
+        Footers = <>
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Orientation = toHorizontal
+        Title.Caption = 'EditDate'
+        Width = 150
+        FieldName = 'EditDate'
+        EditButtons = <>
+        Filter.DropDownRows = 0
+        Filter.EmptyValue = '(Пусто)'
+        Filter.NotEmptyValue = '(Не пусто)'
+        Filter.AllValue = '(Все значения)'
+        Filter.EmptyFont.Style = [fsItalic]
+        Filter.ItemIndex = -1
+        Footers = <>
+      end>
+    KeyStrokes = <    
+      item
+        Command = rxgcShowFindDlg
+        ShortCut = 16454
+        Enabled = True
+      end    
+      item
+        Command = rxgcShowColumnsDlg
+        ShortCut = 16471
+        Enabled = True
+      end    
+      item
+        Command = rxgcShowFilterDlg
+        ShortCut = 16468
+        Enabled = True
+      end    
+      item
+        Command = rxgcShowSortDlg
+        ShortCut = 16467
+        Enabled = True
+      end    
+      item
+        Command = rxgcShowQuickFilter
+        ShortCut = 16465
+        Enabled = True
+      end    
+      item
+        Command = rxgcHideQuickFilter
+        ShortCut = 16456
+        Enabled = True
+      end    
+      item
+        Command = rxgcSelectAll
+        ShortCut = 16449
+        Enabled = True
+      end    
+      item
+        Command = rxgcDeSelectAll
+        ShortCut = 16429
+        Enabled = True
+      end    
+      item
+        Command = rxgcInvertSelection
+        ShortCut = 16426
+        Enabled = True
+      end    
+      item
+        Command = rxgcOptimizeColumnsWidth
+        ShortCut = 16427
+        Enabled = True
+      end    
+      item
+        Command = rxgcCopyCellValue
+        ShortCut = 16451
+        Enabled = True
+      end>
+    FooterOptions.DrawFullLine = False
+    SearchOptions.QuickSearchOptions = [loCaseInsensitive, loPartialKey]
+    SearchOptions.FromStart = False
+    OptionsRx = [rdgAllowColumnsForm, rdgAllowDialogFind, rdgAllowQuickFilter]
+    Align = alClient
+    Color = clWindow
+    DrawFullLine = False
+    FocusColor = clRed
+    SelectedColor = clHighlight
+    GridLineStyle = psSolid
+    DataSource = dsData
+    Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    TabOrder = 1
+  end
+  object rxData: TRxMemoryData
+    FieldDefs = <    
+      item
+        Name = 'ID'
+        DataType = ftInteger
+      end    
+      item
+        Name = 'Caption'
+        DataType = ftString
+        Size = 250
+      end    
+      item
+        Name = 'EditDate'
+        DataType = ftDateTime
+      end>
+    PacketRecords = 0
+    Left = 224
+    Top = 80
+    object rxDataID: TLongintField
+      FieldKind = fkData
+      FieldName = 'ID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object rxDataCaption: TStringField
+      FieldKind = fkData
+      FieldName = 'Caption'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 250
+    end
+    object rxDataEditDate: TDateTimeField
+      FieldKind = fkData
+      FieldName = 'EditDate'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object dsData: TDataSource
+    DataSet = rxData
+    Left = 184
+    Top = 80
+  end
+  object FontDialog1: TFontDialog
+    Width = 459
+    Height = 359
+    MinFontSize = 0
+    MaxFontSize = 0
+    Left = 784
+    Top = 136
+  end
+end

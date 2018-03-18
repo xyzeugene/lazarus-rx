@@ -1,0 +1,318 @@
+object RxDBGrid_PopUpFilterForm: TRxDBGrid_PopUpFilterForm
+  Left = 525
+  Height = 448
+  Top = 284
+  Width = 279
+  Caption = 'RxDBGrid_PopUpFilterForm'
+  ClientHeight = 448
+  ClientWidth = 279
+  KeyPreview = True
+  OnClose = FormClose
+  OnKeyDown = FormKeyDown
+  ShowHint = True
+  LCLVersion = '1.9.0.0'
+  object SpeedButton1: TSpeedButton
+    Tag = 1
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = DividerBevel1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 0
+    Height = 24
+    Top = 20
+    Width = 279
+    Anchors = [akTop, akLeft, akRight]
+    AutoSize = True
+    Caption = 'Ascending'
+    Flat = True
+    OnClick = SpeedButton1Click
+  end
+  object SpeedButton2: TSpeedButton
+    Tag = -1
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = SpeedButton1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 0
+    Height = 22
+    Top = 44
+    Width = 279
+    Anchors = [akTop, akLeft, akRight]
+    Caption = 'Descending'
+    Flat = True
+    OnClick = SpeedButton1Click
+  end
+  object DividerBevel1: TDividerBevel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 0
+    Height = 20
+    Top = 0
+    Width = 279
+    Caption = 'Sorting'
+    Anchors = [akTop, akLeft, akRight]
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object DividerBevel2: TDividerBevel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = SpeedButton2
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 0
+    Height = 20
+    Top = 66
+    Width = 279
+    Caption = 'Quick Filter'
+    Anchors = [akTop, akLeft, akRight]
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object SpeedButton3: TSpeedButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = DividerBevel2
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 0
+    Height = 24
+    Top = 86
+    Width = 279
+    Anchors = [akTop, akLeft, akRight]
+    AutoSize = True
+    Caption = 'Clear filter'
+    Flat = True
+    OnClick = SpeedButton3Click
+  end
+  object SpeedButton4: TSpeedButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = SpeedButton3
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 0
+    Height = 24
+    Top = 110
+    Width = 279
+    Anchors = [akTop, akLeft, akRight]
+    AutoSize = True
+    Caption = 'Empty values'
+    Flat = True
+    OnClick = SpeedButton4Click
+  end
+  object SpeedButton5: TSpeedButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = SpeedButton4
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 0
+    Height = 24
+    Top = 134
+    Width = 279
+    Anchors = [akTop, akLeft, akRight]
+    AutoSize = True
+    Caption = 'Not empty'
+    Flat = True
+    OnClick = SpeedButton5Click
+  end
+  object DividerBevel3: TDividerBevel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = SpeedButton5
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 0
+    Height = 20
+    Top = 158
+    Width = 279
+    Anchors = [akTop, akLeft, akRight]
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object SpeedButton6: TSpeedButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = DividerBevel3
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 0
+    Height = 24
+    Top = 178
+    Width = 279
+    Anchors = [akTop, akLeft, akRight]
+    AutoSize = True
+    Caption = 'Standart filter'
+    Flat = True
+    OnClick = SpeedButton6Click
+  end
+  object CheckListBox1: TCheckListBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = SpeedButton6
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = SpeedButton8
+    Left = 0
+    Height = 150
+    Top = 202
+    Width = 279
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Bottom = 6
+    ItemHeight = 0
+    OnClickCheck = CheckListBox1ClickCheck
+    PopupMenu = PopupMenu1
+    TabOrder = 0
+    TopIndex = -1
+  end
+  object ButtonPanel1: TButtonPanel
+    Left = 6
+    Height = 46
+    Top = 396
+    Width = 267
+    OKButton.Name = 'OKButton'
+    OKButton.DefaultCaption = True
+    HelpButton.Name = 'HelpButton'
+    HelpButton.DefaultCaption = True
+    CloseButton.Name = 'CloseButton'
+    CloseButton.DefaultCaption = True
+    CancelButton.Name = 'CancelButton'
+    CancelButton.DefaultCaption = True
+    TabOrder = 1
+    ShowButtons = [pbOK, pbCancel]
+  end
+  object SpeedButton8: TSpeedButton
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = ButtonPanel1
+    Left = 241
+    Height = 32
+    Hint = 'Hide only current item'
+    Top = 358
+    Width = 32
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Right = 6
+    Glyph.Data = {
+      36040000424D3604000000000000360000002800000010000000100000000100
+      2000000000000004000064000000640000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000BDBF
+      BFFF8F9392FFC2C5C4FF00000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000969B
+      99FFB9BCBBFF8D918FFFC4C6C5FF000000000000000000000000B2B5B4FF858A
+      88FF858A88FF858A88FF858A88FF858A88FF858A88FFB0B2B1FF000000000000
+      000000000000C6C8C8FFB5B8B7FF000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000C1C4
+      C3FF8F9392FFC7CAC9FF00000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000969A
+      99FFB9BCBBFF8D918FFFC9CBCBFF000000000000000000000000B5B7B6FF858A
+      88FF858A88FF858A88FF858A88FF858A88FF858A88FFB2B4B3FF000000000000
+      000000000000C9CCCBFFB6B9B8FF000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000196B
+      D0FF005CCEFF1B6CD0FF000000000000000000000000000000006B9BD7FF0A62
+      CFFF005CCEFF005CCEFF005CCEFF005CCEFF0961CFFF6598D7FF00000000065F
+      CEFF00000000005CCEFF00000000000000000000000000000000055FCEFFBECE
+      E0FF00000000000000000000000000000000C4D1E0FF045FCFFF00000000196B
+      D0FF005CCEFF1B6DD1FF000000000000000000000000000000006B9CD8FF0A62
+      CFFF005CCEFF005CCEFF005CCEFF005CCEFF0961CFFF6598D7FF000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000
+    }
+    OnClick = SpeedButton9Click
+  end
+  object SpeedButton9: TSpeedButton
+    Tag = 1
+    AnchorSideTop.Control = SpeedButton8
+    AnchorSideRight.Control = SpeedButton8
+    AnchorSideBottom.Control = SpeedButton8
+    AnchorSideBottom.Side = asrBottom
+    Left = 203
+    Height = 32
+    Hint = 'Show only current item'
+    Top = 358
+    Width = 32
+    Anchors = [akTop, akRight, akBottom]
+    BorderSpacing.Right = 6
+    Glyph.Data = {
+      36040000424D3604000000000000360000002800000010000000100000000100
+      2000000000000004000064000000640000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000009195
+      93FF878C8AFF919593FF00000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000878C
+      8AFFDADBDBFF878C8AFF00000000000000000000000000000000969A98FF858A
+      88FF858A88FF858A88FF858A88FF858A88FF858A88FF929695FF000000008F95
+      93FF878C8AFF8F9593FF00000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000009296
+      94FF878C8AFF929694FF00000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000878C
+      8AFFDEDFDFFF878C8AFF00000000000000000000000000000000979B99FF858A
+      88FF858A88FF858A88FF858A88FF858A88FF858A88FF939796FF000000009095
+      93FF878C8AFF909593FF00000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000B7C9
+      DEFF2874D2FF9DB9DBFF00000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000BCCCDFFF1D77
+      D9FF47ACF5FF207DDCFFA2BDDCFF0000000000000000000000006499D8FF0661
+      CFFF005CCEFF005CCEFF005CCEFF005CCEFF0B64D0FF7DA7DAFF72A9E0FF45AF
+      F8FF95CAEFFF48B0F9FF1F7BDBFFA8C0DDFF00000000D6DCE2FF045FCFFF35A3
+      F5FF3EAFFCFF3EAFFCFF3EAFFCFF3EAFFCFF2D98EFFF0E66D0FF99CCEEFFB3D4
+      EAFF00000000BDD7E8FF48B0F9FF1E79DAFFABC2DEFF000000005D96D9FF0560
+      D0FF005CCEFF005CCEFF005CCEFF005CCEFF0962D0FF77A4DAFF000000000000
+      00000000000000000000BCD7E9FF49B1F9FF6FA8E1FF00000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000BBD8EBFF65BCF7FF00000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000
+    }
+    OnClick = SpeedButton9Click
+  end
+  object CheckBox1: TCheckBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = SpeedButton9
+    AnchorSideTop.Side = asrCenter
+    Left = 6
+    Height = 24
+    Top = 362
+    Width = 88
+    BorderSpacing.Left = 6
+    Caption = 'All values'
+    OnChange = CheckBox1Change
+    TabOrder = 2
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 64
+    Top = 272
+    object MenuItem1: TMenuItem
+      Tag = 1
+      Caption = 'Check all'
+      OnClick = MenuItem1Click
+    end
+    object MenuItem3: TMenuItem
+      Caption = '-'
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Unchec all'
+      OnClick = MenuItem1Click
+    end
+  end
+end
