@@ -1,2 +1,2 @@
 # lazarus-rx
-RX Lib for Lazazrus
+RX Lib for Lazarus
